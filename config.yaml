@@ -1,0 +1,53 @@
+seed: 12345
+
+grid:
+  chunk: 32
+  cell_size: 0.5
+  iso: 0.0
+  w_period: 8.0
+  w_delta: 0.05
+  region_size: 64
+
+noise:
+  octaves: 4
+  lacunarity: 2.0
+  gain: 0.5
+  sigma: 0.08
+  warp_k1: 0.8
+  warp_k2: 0.3
+  s1: 0.7
+  s2: 1.3
+
+gameplay:
+  pickups: 10
+  pickup_min_dist: 3.0
+  pickup_spacing: 6.0
+  start_safe_radius: 4.0
+  wall_distance: 1.2
+
+player:
+  speed: 4.0
+  jump: 6.0
+  radius: 0.4
+  height: 1.7
+  mouse_sensitivity: 0.002
+
+render:
+  fov: 75
+  fog_distance: 40
+  max_tris: 500000
+  flashlight_range: 20.0
+  flashlight_narrow_angle: 20.0
+  flashlight_wide_angle: 55.0
+
+presets:
+  - name: "Small Cave"
+    pickups: 5
+    region_size: 48
+  - name: "Medium Cave"
+    pickups: 10
+    region_size: 64
+  - name: "Large Cave"
+    pickups: 15
+    region_size: 80
+

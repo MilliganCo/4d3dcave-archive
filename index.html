@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Город теней</title>
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+<body>
+    <div id="app">
+        <canvas id="canvas"></canvas>
+        <div id="ui">
+            <div id="menu" class="panel">
+                <h1>Город теней</h1>
+                <p>Найдите все скрытые объекты по их теням</p>
+                <button id="start-btn">Начать игру</button>
+                <button id="reset-btn">Сброс</button>
+                <div class="difficulty">
+                    <label>Сложность:</label>
+                    <select id="difficulty-select">
+                        <option value="easy">Легко (7 объектов)</option>
+                        <option value="normal" selected>Средне (10 объектов)</option>
+                        <option value="hard">Сложно (13 объектов)</option>
+                    </select>
+                </div>
+            </div>
+            <div id="hud" class="panel hidden">
+                <div class="stats">
+                    <div>Найдено: <span id="found-count">0</span> / <span id="total-count">10</span></div>
+                    <div>Время: <span id="timer">00:00</span></div>
+                    <div id="cooldown-info" class="hidden">Стоп света: <span id="cooldown-timer">0</span>с</div>
+                </div>
+                <div id="reticle">+</div>
+            </div>
+            <div id="victory" class="panel hidden">
+                <h2>Победа!</h2>
+                <p>Все объекты найдены!</p>
+                <p>Время: <span id="victory-time"></span></p>
+                <button id="restart-btn">Играть снова</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
+
