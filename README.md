@@ -1,51 +1,7 @@
-# Город теней
+# Archived duplicate
 
-Игра-головоломка от первого лица: найдите все скрытые объекты по их теням от движущегося источника света.
+This repository duplicates `MilliganCo/4d3dcave` (City of Shadows). Audited README and package manifest files match the canonical repository by Git blob SHA.
 
-## Установка
+Canonical project: https://github.com/MilliganCo/4d3dcave
 
-```bash
-npm install
-# или
-pnpm install
-```
-
-## Запуск
-
-### Разработка
-```bash
-npm run dev
-# или
-pnpm dev
-```
-
-### Сборка
-```bash
-npm run build
-pnpm preview
-```
-
-## Управление
-
-- **Клик** - захват мыши (PointerLock)
-- **WASD** - движение
-- **Space** - прыжок
-- **Ctrl** - приседание
-- **ЛКМ** - пометка объекта
-- **Shift** - остановить свет на 3 секунды (кулдаун 10с)
-- **ESC** - меню
-
-## Особенности
-
-- Процедурная генерация скрытых объектов
-- Реалистичные тени от движущегося источника света
-- Система поиска объектов по теням
-- Разные уровни сложности (7, 10, 13 объектов)
-- Система стоп-света для упрощения поиска
-
-## Технологии
-
-- Three.js r158
-- TypeScript
-- Vite
-- PointerLockControls
+Do not publish or continue development here. Remove this repository after checking external links.
